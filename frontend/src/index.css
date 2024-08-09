@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.app__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.clock__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  background-color: #f0ebe3;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-bottom: 30px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.clock__container:hover {
+  background-color: #e0d5c8;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.clock {
+  font-size: 50px;
+  color: #576f72;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.createSchedule__container {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+  background: #cabcbc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: center;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #576f72;
+  box-shadow: 0 0 5px rgba(87, 111, 114, 0.3);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  max-width: 200px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #576f72;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 8px;
+
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #4a5d60;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #3c4d4e;
+  transform: scale(1);
+}
+
+.schedules__container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.schedules__header {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.schedules__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.schedules__list-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.schedules__list-item:last-child {
+  border-bottom: none;
+}
+
+.schedules__list-item:hover {
+  background-color: #f0f8f8;
+  color: #576f72;
+}
+
+.schedules__list-item span {
+  font-weight: 500;
+}
